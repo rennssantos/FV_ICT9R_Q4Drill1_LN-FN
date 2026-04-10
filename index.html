@@ -8,24 +8,21 @@
 <body>
     <h1>JavaScript Conditional Statements</h1>
    
-    <input type="text" class="form-control" id="Age" placeholder="type here...">
-    <button class="btn btn-info" onclick="checkAge()">Check</button>
+    <input type="text" class="form-control" id="consumption" placeholder="type here...">
+    <button class="btn btn-info" onclick="checkElec()">Check</button>
 
     <script>
-        function checkAge(){
-        var Age = document.getElementById("Age").value;
+        function checkElec(){
+        var consumption = document.getElementById("consumption").value;
+        let category1 = "Lifeline Consumer";
 
         if (isNaN(Age) || Age < 0){
             alert("Please input a valid number.");
         }
         else if (consumption <= 100){
             //else if ((consumption >=0) && (consumption <=100))
-            alert("You are underage.");
+            alert(category1 + ": You have discounted rate.");
         }
-
-
-
-
 
         else if (Age > 18){
             alert("You are of legal age.");
